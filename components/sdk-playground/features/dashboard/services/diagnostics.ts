@@ -10,7 +10,7 @@ export interface Diagnostics {
 
 export function getDiagnostics(): Diagnostics {
   return {
-    sdkVersion: "1.0.0",
+    sdkVersion: "2.0.0",
     platform: Platform.OS,
     initialized: true,
     automation: true,

@@ -1,7 +1,26 @@
 {
   "name": "react-native-notification-sdk-playground",
-  "main": "expo-router/entry",
   "version": "1.0.0",
+  "description": "Official playground application for react-native-notification-sdk. Demonstrates notification rules, dynamic templates, audience targeting, deep linking, and Firebase Cloud Messaging integration.",
+  "author": {
+    "name": "Uday Kiran Akula",
+    "email": "udaykiran199715@gmail.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "react-native",
+    "expo",
+    "expo-router",
+    "firebase",
+    "fcm",
+    "notifications",
+    "push-notifications",
+    "notification-sdk",
+    "deep-linking",
+    "playground",
+    "react-native-notification-sdk"
+  ],
+  "main": "expo-router/entry",
   "scripts": {
     "start": "expo start",
     "reset-project": "node ./scripts/reset-project.js",

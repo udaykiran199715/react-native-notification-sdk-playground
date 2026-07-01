@@ -8,7 +8,7 @@ import { ISDKTestService } from "./ISDKTestService";
 export class SDKTestService implements ISDKTestService {
   async getEnvironment(): Promise<SDKEnvironment> {
     return {
-      sdkVersion: "1.0.0",
+      sdkVersion: "2.0.0",
 
       expoVersion: Constants.expoConfig?.sdkVersion ?? "-",
 
