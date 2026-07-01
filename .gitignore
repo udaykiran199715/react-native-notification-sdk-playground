@@ -41,3 +41,14 @@ app-example
 # generated native folders
 /ios
 /android
+
+
+google-services.json
+GoogleService-Info.plist
+
+functions/
+/functions
+.firebaserc
+firebase.json
+firestore.indexes.json
+firestore.rules
