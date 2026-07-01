@@ -1,13 +1,14 @@
 import React from "react";
-import { View } from "react-native";
 
-import { KeyValueCard, MetricCard, Screen, Section } from "../../common";
-import { DashboardHeader } from "./components/DashboardHeader";
-import { DiagnosticsCard } from "./components/DiagnosticsCard";
-import { QuickActions } from "./components/QuickActions";
-import { RecentNotifications } from "./components/RecentNotifications";
-import { RecentTimeline } from "./components/RecentTimeline";
-import { StatusGrid } from "./components/StatusGrid";
+import { Screen, Section } from "../../common";
+
+import { DeviceInfoCard } from "../device/components/DeviceInfoCard";
+import { FirebaseInfoCard } from "../device/components/FirebaseInfoCard";
+import { PermissionInfoCard } from "../device/components/PermissionInfoCard";
+import { TokenInfoCard } from "../device/components/TokenInfoCard";
+
+import { HealthCard } from "./components/HealthCard";
+import { StatisticsCard } from "./components/StatisticsCard";
 import { useDashboard } from "./hooks/useDashboard";
 
 export function DashboardScreen(): React.JSX.Element {
@@ -15,49 +16,34 @@ export function DashboardScreen(): React.JSX.Element {
 
   return (
     <Screen>
-      <DashboardHeader version={dashboard.sdkVersion} />
-
-      <Section title="SDK Status">
-        <StatusGrid items={dashboard.statuses} />
+      <Section title="SDK">
+        <HealthCard healthy={dashboard.healthy} />
       </Section>
 
-      <Section title="Current User">
-        <KeyValueCard title="Current User" value={dashboard.currentUser} />
-      </Section>
-
-      <Section title="FCM Token">
-        <KeyValueCard
-          title="FCM Token"
-          value={dashboard.token}
-          numberOfLines={4}
+      <Section title="Statistics">
+        <StatisticsCard
+          categories={dashboard.statistics.categories}
+          scenarios={dashboard.statistics.scenarios}
+          rules={dashboard.statistics.rules}
         />
       </Section>
 
-      <Section title="Metrics">
-        <View className="flex-row gap-3">
-          {dashboard.metrics.map((metric) => (
-            <MetricCard
-              key={metric.title}
-              title={metric.title}
-              value={metric.value}
-            />
-          ))}
-        </View>
-      </Section>
-      <Section title="Quick Actions">
-        <QuickActions />
-      </Section>
+      <Section title="Device">
+        <DeviceInfoCard
+          sdkVersion={dashboard.sdkVersion}
+          platform="Android"
+          reactNativeVersion="0.82"
+        />
 
-      <Section title="SDK Information">
-        <DiagnosticsCard />
-      </Section>
+        <PermissionInfoCard permission={dashboard.permission} />
 
-      <Section title="Recent Notifications">
-        <RecentNotifications />
-      </Section>
+        <TokenInfoCard
+          currentUser={dashboard.currentUser}
+          token={dashboard.token}
+          deviceId="Not Available"
+        />
 
-      <Section title="Timeline">
-        <RecentTimeline />
+        <FirebaseInfoCard firebaseApp="Default" projectId="Unknown" />
       </Section>
     </Screen>
   );

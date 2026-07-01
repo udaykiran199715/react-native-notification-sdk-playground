@@ -22,7 +22,7 @@ export const ChatRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/chat",
+      route: "/chat",
 
       params: {
         chatId: "{{chatId}}",
@@ -49,7 +49,7 @@ export const ChatRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/chat",
+      route: "/chat",
 
       params: {
         chatId: "{{chatId}}",
@@ -77,7 +77,7 @@ export const ChatRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/chat",
+      route: "/chat",
 
       params: {
         chatId: "{{chatId}}",
@@ -105,7 +105,7 @@ export const ChatRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/groups",
+      route: "/chat",
 
       params: {
         groupId: "{{groupId}}",
@@ -132,7 +132,7 @@ export const ChatRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/groups",
+      route: "/chat",
 
       params: {
         groupId: "{{groupId}}",
@@ -159,7 +159,7 @@ export const ChatRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/calls",
+      route: "/chat",
 
       params: {
         chatId: "{{chatId}}",
@@ -186,7 +186,7 @@ export const ChatRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/calls",
+      route: "/chat",
 
       params: {
         chatId: "{{chatId}}",
@@ -213,7 +213,7 @@ export const ChatRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/calls",
+      route: "/chat",
 
       params: {
         chatId: "{{chatId}}",
@@ -239,7 +239,7 @@ export const ChatRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/channels",
+      route: "/chat",
     },
   },
 
@@ -261,7 +261,7 @@ export const ChatRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/announcements",
+      route: "/chat",
     },
   },
 ];

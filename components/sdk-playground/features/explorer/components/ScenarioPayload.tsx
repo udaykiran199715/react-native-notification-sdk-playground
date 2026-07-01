@@ -1,15 +1,19 @@
 import { JsonEditor } from "@/components/sdk-playground/components/json";
-import { PlaygroundScenario } from "@/components/sdk-playground/scenarios";
 import React from "react";
+import { NotificationPayload } from "react-native-notification-sdk";
 
-type Props = {
-  scenario?: PlaygroundScenario;
-};
+interface PayloadTabProps {
+  payload: NotificationPayload;
+  onChange(payload: NotificationPayload): void;
+}
 
-export function ScenarioPayload({ scenario }: Props): React.JSX.Element | null {
-  if (!scenario) {
+export function ScenarioPayload({
+  payload,
+  onChange,
+}: PayloadTabProps): React.JSX.Element | null {
+  if (!payload) {
     return null;
   }
 
-  return <JsonEditor value={scenario.payload} />;
+  return <JsonEditor value={payload} onChange={onChange} />;
 }

@@ -53,36 +53,6 @@ export default function TabLayout() {
           ),
         }}
       />
-      {/* Hidden deep link targets */}
-      {[
-        "tracking",
-        "driver",
-        "warehouse",
-        "workspace",
-        "projects",
-        "billing",
-        "hrms",
-        "manager",
-        "announcements",
-        "health",
-        "appointments",
-        "hospital",
-        "banking",
-        "accounts",
-        "security",
-        "social",
-        "profile",
-        "feed",
-        "chat",
-        "groups",
-        "calls",
-        "orders/details",
-        "delivery/details",
-        "refund/details",
-        "deliveries",
-      ].map((name) => (
-        <Tabs.Screen key={name} name={name} options={{ href: null }} />
-      ))}
     </Tabs>
   );
 }

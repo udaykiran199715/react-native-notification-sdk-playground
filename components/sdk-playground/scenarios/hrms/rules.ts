@@ -22,7 +22,7 @@ export const HrmsRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/manager/leave-request",
+      route: "/hrms",
 
       params: {
         employeeId: "{{employeeId}}",
@@ -49,7 +49,7 @@ export const HrmsRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/leave/history",
+      route: "/hrms",
 
       params: {
         employeeId: "{{employeeId}}",
@@ -76,7 +76,7 @@ export const HrmsRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/leave/history",
+      route: "/hrms",
 
       params: {
         employeeId: "{{employeeId}}",
@@ -103,7 +103,7 @@ export const HrmsRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/attendance",
+      route: "/hrms",
 
       params: {
         employeeId: "{{employeeId}}",
@@ -130,7 +130,7 @@ export const HrmsRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/shift",
+      route: "/hrms",
 
       params: {
         employeeId: "{{employeeId}}",
@@ -157,7 +157,7 @@ export const HrmsRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/attendance",
+      route: "/hrms",
 
       params: {
         employeeId: "{{employeeId}}",
@@ -184,7 +184,7 @@ export const HrmsRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/payroll",
+      route: "/hrms",
 
       params: {
         employeeId: "{{employeeId}}",
@@ -210,7 +210,7 @@ export const HrmsRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/announcements",
+      route: "/hrms",
     },
   },
 
@@ -233,7 +233,7 @@ export const HrmsRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/profile",
+      route: "/hrms",
 
       params: {
         employeeId: "{{employeeId}}",
@@ -260,7 +260,7 @@ export const HrmsRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/profile",
+      route: "/hrms",
 
       params: {
         employeeId: "{{employeeId}}",

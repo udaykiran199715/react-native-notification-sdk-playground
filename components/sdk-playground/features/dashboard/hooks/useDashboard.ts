@@ -1,70 +1,35 @@
 import { useMemo } from "react";
-import { Platform } from "react-native";
 
-import type { DashboardState } from "../types";
+import { ScenarioRegistry } from "@/components/sdk-playground/scenarios";
 
-export function useDashboard(): DashboardState {
-  return useMemo(
+import { Rules } from "@/components/sdk-playground/models/Rules";
+import { useDevice } from "../../device/hooks/useDevice";
+
+export function useDashboard() {
+  const device = useDevice();
+
+  const statistics = useMemo(
     () => ({
-      initialized: true,
-
-      sdkVersion: "1.0.0",
-
-      platform: Platform.OS,
-
-      currentUser: undefined,
-
-      token: undefined,
-
-      statuses: [
-        {
-          title: "SDK",
-
-          status: "success",
-
-          value: "Initialized",
-        },
-        {
-          title: "Automation",
-
-          status: "success",
-
-          value: "Enabled",
-        },
-        {
-          title: "Firebase",
-
-          status: "success",
-
-          value: "Connected",
-        },
-        {
-          title: "Permission",
-
-          status: "success",
-
-          value: "Granted",
-        },
-      ],
-
-      metrics: [
-        {
-          title: "Rules",
-
-          value: 0,
-        },
-        {
-          title: "Scenarios",
-
-          value: 0,
-        },
-        {
-          title: "Notifications",
-
-          value: 0,
-        },
-      ],
+      categories: ScenarioRegistry.getCategories().length,
+      scenarios: ScenarioRegistry.getAll().length,
+      rules: Rules.length,
     }),
     [],
   );
+
+  const healthy = device.permission === "authorized" && !!device.token;
+
+  return {
+    sdkVersion: device.sdkVersion,
+
+    permission: device.permission,
+
+    currentUser: device.currentUser,
+
+    token: device.token,
+
+    statistics,
+
+    healthy,
+  };
 }

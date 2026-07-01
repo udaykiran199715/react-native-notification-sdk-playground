@@ -7,7 +7,7 @@ export function PlaygroundHeader(): React.JSX.Element {
       <Text className="text-xl font-bold">Notification SDK Playground</Text>
 
       <Text className="mt-1 text-sm text-neutral-500">
-        Test rules, payloads and automation
+        Test rules, payloads and notifications in a safe environment.
       </Text>
     </View>
   );

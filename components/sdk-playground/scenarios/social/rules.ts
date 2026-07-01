@@ -22,7 +22,7 @@ export const SocialRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/profile",
+      route: "/social",
 
       params: {
         profileId: "{{profileId}}",
@@ -49,7 +49,7 @@ export const SocialRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/friends",
+      route: "/social",
 
       params: {
         userId: "{{userId}}",
@@ -76,7 +76,7 @@ export const SocialRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/friends",
+      route: "/social",
 
       params: {
         userId: "{{userId}}",
@@ -103,7 +103,7 @@ export const SocialRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/feed",
+      route: "/social",
 
       params: {
         postId: "{{postId}}",
@@ -130,7 +130,7 @@ export const SocialRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/feed",
+      route: "/social",
 
       params: {
         postId: "{{postId}}",
@@ -158,7 +158,7 @@ export const SocialRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/stories",
+      route: "/social",
 
       params: {
         storyId: "{{storyId}}",
@@ -184,7 +184,7 @@ export const SocialRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/live",
+      route: "/social",
 
       params: {
         profileId: "{{profileId}}",
@@ -211,7 +211,7 @@ export const SocialRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/profile",
+      route: "/social",
 
       params: {
         profileId: "{{profileId}}",
@@ -238,7 +238,7 @@ export const SocialRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/profile",
+      route: "/social",
 
       params: {
         profileId: "{{profileId}}",
@@ -265,7 +265,7 @@ export const SocialRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/analytics",
+      route: "/social",
 
       params: {
         profileId: "{{profileId}}",

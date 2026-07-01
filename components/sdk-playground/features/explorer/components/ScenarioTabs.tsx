@@ -2,17 +2,24 @@ import React, { useState } from "react";
 import { Pressable, Text, View } from "react-native";
 
 import { PlaygroundScenario } from "@/components/sdk-playground/scenarios";
+import { NotificationPayload } from "react-native-notification-sdk";
 import { ScenarioNavigation } from "./ScenarioNavigation";
 import { ScenarioPayload } from "./ScenarioPayload";
 import { ScenarioRule } from "./ScenarioRule";
 
 type Props = {
   scenario?: PlaygroundScenario;
+  payload?: NotificationPayload;
+  onPayloadChange?: (payload: NotificationPayload) => void;
 };
 
 type Tab = "payload" | "rule" | "navigation";
 
-export function ScenarioTabs({ scenario }: Props): React.JSX.Element {
+export function ScenarioTabs({
+  scenario,
+  payload,
+  onPayloadChange,
+}: Props): React.JSX.Element {
   const [tab, setTab] = useState<Tab>("payload");
 
   return (
@@ -37,7 +44,9 @@ export function ScenarioTabs({ scenario }: Props): React.JSX.Element {
         />
       </View>
 
-      {tab === "payload" && <ScenarioPayload scenario={scenario} />}
+      {tab === "payload" && payload && onPayloadChange && (
+        <ScenarioPayload payload={payload} onChange={onPayloadChange} />
+      )}
 
       {tab === "rule" && <ScenarioRule scenario={scenario} />}
 

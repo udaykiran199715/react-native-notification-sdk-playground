@@ -49,7 +49,10 @@ export default function RootLayout() {
         return;
       }
 
-      router.push(navigation.route as any);
+      router.push({
+        pathname: navigation.route as any,
+        params: navigation.params as any,
+      });
     });
 
     return () => unsubscribe();

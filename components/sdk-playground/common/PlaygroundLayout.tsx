@@ -22,6 +22,7 @@ export function PlaygroundLayout({
       <ScrollView
         contentContainerStyle={{}}
         showsVerticalScrollIndicator={false}
+        className="mb-15"
       >
         {children}
       </ScrollView>

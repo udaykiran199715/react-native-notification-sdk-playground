@@ -22,7 +22,7 @@ export const LogisticsRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/tracking",
+      route: "/logistics",
 
       params: {
         shipmentId: "{{shipmentId}}",
@@ -49,7 +49,7 @@ export const LogisticsRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/tracking",
+      route: "/logistics",
 
       params: {
         shipmentId: "{{shipmentId}}",
@@ -77,7 +77,7 @@ export const LogisticsRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/tracking",
+      route: "/logistics",
 
       params: {
         shipmentId: "{{shipmentId}}",
@@ -104,7 +104,7 @@ export const LogisticsRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/tracking",
+      route: "/logistics",
 
       params: {
         shipmentId: "{{shipmentId}}",
@@ -131,7 +131,7 @@ export const LogisticsRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/tracking",
+      route: "/logistics",
 
       params: {
         shipmentId: "{{shipmentId}}",
@@ -158,7 +158,7 @@ export const LogisticsRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/tracking",
+      route: "/logistics",
 
       params: {
         shipmentId: "{{shipmentId}}",
@@ -186,7 +186,7 @@ export const LogisticsRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/tracking",
+      route: "/logistics",
 
       params: {
         shipmentId: "{{shipmentId}}",
@@ -213,7 +213,7 @@ export const LogisticsRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/tracking",
+      route: "/logistics",
 
       params: {
         shipmentId: "{{shipmentId}}",
@@ -240,7 +240,7 @@ export const LogisticsRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/tracking",
+      route: "/logistics",
 
       params: {
         shipmentId: "{{shipmentId}}",
@@ -267,7 +267,7 @@ export const LogisticsRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/tracking",
+      route: "/logistics",
 
       params: {
         shipmentId: "{{shipmentId}}",

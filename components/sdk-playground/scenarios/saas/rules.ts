@@ -22,7 +22,7 @@ export const SaasRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/workspace",
+      route: "/sass",
 
       params: {
         workspaceId: "{{workspaceId}}",
@@ -49,7 +49,7 @@ export const SaasRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/projects",
+      route: "/sass",
 
       params: {
         projectId: "{{projectId}}",
@@ -77,7 +77,7 @@ export const SaasRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/projects",
+      route: "/sass",
 
       params: {
         projectId: "{{projectId}}",
@@ -105,7 +105,7 @@ export const SaasRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/projects",
+      route: "/sass",
 
       params: {
         projectId: "{{projectId}}",
@@ -133,7 +133,7 @@ export const SaasRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/projects",
+      route: "/sass",
 
       params: {
         projectId: "{{projectId}}",
@@ -161,7 +161,7 @@ export const SaasRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/billing",
+      route: "/sass",
     },
   },
 
@@ -184,7 +184,7 @@ export const SaasRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/billing",
+      route: "/sass",
 
       params: {
         invoiceId: "{{invoiceId}}",
@@ -211,7 +211,7 @@ export const SaasRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/settings/storage",
+      route: "/sass",
     },
   },
 
@@ -233,7 +233,7 @@ export const SaasRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/announcements",
+      route: "/sass",
     },
   },
 
@@ -255,7 +255,7 @@ export const SaasRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/whats-new",
+      route: "/sass",
     },
   },
 ];

@@ -22,7 +22,7 @@ export const HealthcareRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/health",
+      route: "/healthcare",
 
       params: {
         appointmentId: "{{appointmentId}}",
@@ -49,7 +49,7 @@ export const HealthcareRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/health",
+      route: "/healthcare",
 
       params: {
         appointmentId: "{{appointmentId}}",
@@ -76,7 +76,7 @@ export const HealthcareRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/health",
+      route: "/healthcare",
 
       params: {
         appointmentId: "{{appointmentId}}",
@@ -103,7 +103,7 @@ export const HealthcareRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/health",
+      route: "/healthcare",
 
       params: {
         doctorId: "{{doctorId}}",
@@ -130,7 +130,7 @@ export const HealthcareRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/health",
+      route: "/healthcare",
 
       params: {
         appointmentId: "{{appointmentId}}",
@@ -157,7 +157,7 @@ export const HealthcareRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/health",
+      route: "/healthcare",
 
       params: {
         patientId: "{{patientId}}",
@@ -184,7 +184,7 @@ export const HealthcareRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/health",
+      route: "/healthcare",
 
       params: {
         patientId: "{{patientId}}",
@@ -211,7 +211,7 @@ export const HealthcareRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/health",
+      route: "/healthcare",
 
       params: {
         reportId: "{{reportId}}",
@@ -237,7 +237,7 @@ export const HealthcareRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/health",
+      route: "/healthcare",
     },
   },
 
@@ -260,7 +260,7 @@ export const HealthcareRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/health",
+      route: "/healthcare",
 
       params: {
         patientId: "{{patientId}}",

@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Screen, Section } from "../../common";
+import { CurrentUserCard } from "./components/CurrentUserCard";
 import { DeviceInfoCard } from "./components/DeviceInfoCard";
 import { FirebaseInfoCard } from "./components/FirebaseInfoCard";
 import { PermissionInfoCard } from "./components/PermissionInfoCard";
@@ -19,6 +20,15 @@ export function DeviceScreen() {
           reactNativeVersion={device.reactNativeVersion}
         />
       </Section>
+      <CurrentUserCard
+        testUsers={device.testUsers}
+        selectedUser={device.selectedUser}
+        onChangeUser={device.setSelectedUser}
+        currentUser={device.currentUser}
+        isLoading={device.isLoading}
+        onRegister={device.registerUser}
+        onClear={device.clearUser}
+      />
 
       <Section title="Firebase">
         <FirebaseInfoCard

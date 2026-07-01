@@ -1,27 +1,52 @@
 import React from "react";
-import { Pressable, Text, View } from "react-native";
+import { ActivityIndicator, Pressable, Text, View } from "react-native";
 
 type Props = {
-  onEmit(): void;
+  readonly onEmit: () => void | Promise<void>;
+  readonly onReset: () => void;
 
-  onReset(): void;
+  readonly isEmitting?: boolean;
+  readonly disableReset?: boolean;
 };
 
-export function ScenarioToolbar({ onEmit, onReset }: Props): React.JSX.Element {
+export function ScenarioToolbar({
+  onEmit,
+  onReset,
+  isEmitting = false,
+  disableReset = false,
+}: Props): React.JSX.Element {
   return (
     <View className="flex-row gap-3">
       <Pressable
+        disabled={isEmitting}
         onPress={onEmit}
-        className="flex-1 rounded-2xl bg-blue-600 py-4"
+        className={`flex-1 items-center justify-center rounded-xl py-4 ${
+          isEmitting ? "bg-blue-400" : "bg-blue-600"
+        }`}
       >
-        <Text className="text-center font-semibold text-white">Emit Event</Text>
+        {isEmitting ? (
+          <ActivityIndicator color="white" />
+        ) : (
+          <Text className="font-semibold text-white">Emit Notification</Text>
+        )}
       </Pressable>
 
       <Pressable
+        disabled={disableReset}
         onPress={onReset}
-        className="flex-1 rounded-2xl bg-neutral-200 py-4 dark:bg-neutral-800"
+        className={`flex-1 items-center justify-center rounded-xl py-4 ${
+          disableReset
+            ? "bg-neutral-100 dark:bg-neutral-900"
+            : "bg-neutral-200 dark:bg-neutral-800"
+        }`}
       >
-        <Text className="text-center font-semibold text-neutral-900 dark:text-white">
+        <Text
+          className={`font-semibold ${
+            disableReset
+              ? "text-neutral-400 dark:text-neutral-600"
+              : "text-neutral-900 dark:text-white"
+          }`}
+        >
           Reset Payload
         </Text>
       </Pressable>

@@ -1,12 +1,11 @@
 import React from "react";
 import { Pressable, ScrollView, Text, View } from "react-native";
 
-type Tab = "dashboard" | "explorer" | "automation" | "device" | "settings";
+type Tab = "dashboard" | "explorer" | "device" | "settings";
 
 const TABS: { key: Tab; label: string }[] = [
   { key: "dashboard", label: "Dashboard" },
   { key: "explorer", label: "Explorer" },
-  { key: "automation", label: "Automation" },
   { key: "device", label: "Device" },
   { key: "settings", label: "Settings" },
 ];

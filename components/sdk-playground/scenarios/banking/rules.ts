@@ -22,7 +22,7 @@ export const BankingRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/banking/transactions/details",
+      route: "/banking",
 
       params: {
         transactionId: "{{transactionId}}",
@@ -49,7 +49,7 @@ export const BankingRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/banking/transactions/details",
+      route: "/banking",
 
       params: {
         transactionId: "{{transactionId}}",
@@ -76,7 +76,7 @@ export const BankingRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/banking/accounts",
+      route: "/banking",
 
       params: {
         accountNumber: "{{accountNumber}}",
@@ -103,7 +103,7 @@ export const BankingRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/banking/accounts",
+      route: "/banking",
 
       params: {
         accountNumber: "{{accountNumber}}",
@@ -130,7 +130,7 @@ export const BankingRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/banking/cards",
+      route: "/banking",
 
       params: {
         accountNumber: "{{accountNumber}}",
@@ -157,7 +157,7 @@ export const BankingRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/banking/loans",
+      route: "/banking",
 
       params: {
         accountNumber: "{{accountNumber}}",
@@ -184,7 +184,7 @@ export const BankingRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/banking/security",
+      route: "/banking",
 
       params: {
         accountNumber: "{{accountNumber}}",
@@ -211,7 +211,7 @@ export const BankingRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/banking/security",
+      route: "/banking",
 
       params: {
         accountNumber: "{{accountNumber}}",
@@ -238,7 +238,7 @@ export const BankingRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/banking/beneficiaries",
+      route: "/banking",
 
       params: {
         beneficiary: "{{beneficiary}}",
@@ -265,7 +265,7 @@ export const BankingRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/banking/kyc",
+      route: "/banking",
 
       params: {
         customerId: "{{customerId}}",

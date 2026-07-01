@@ -21,7 +21,7 @@ export const EcommerceRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/orders/details",
+      route: "/ecommerce",
 
       params: {
         orderId: "{{orderId}}",
@@ -47,7 +47,7 @@ export const EcommerceRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/orders/details",
+      route: "/ecommerce",
 
       params: {
         orderId: "{{orderId}}",
@@ -73,7 +73,7 @@ export const EcommerceRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/payments/details",
+      route: "/ecommerce",
 
       params: {
         orderId: "{{orderId}}",
@@ -101,7 +101,7 @@ export const EcommerceRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/payments/retry",
+      route: "/ecommerce",
 
       params: {
         orderId: "{{orderId}}",
@@ -127,7 +127,7 @@ export const EcommerceRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/orders/details",
+      route: "/ecommerce",
 
       params: {
         orderId: "{{orderId}}",
@@ -153,7 +153,7 @@ export const EcommerceRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/tracking",
+      route: "/ecommerce",
 
       params: {
         trackingId: "{{trackingId}}",
@@ -179,7 +179,7 @@ export const EcommerceRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/tracking",
+      route: "/ecommerce",
 
       params: {
         orderId: "{{orderId}}",
@@ -207,7 +207,7 @@ export const EcommerceRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/orders/details",
+      route: "/ecommerce",
 
       params: {
         orderId: "{{orderId}}",
@@ -233,7 +233,7 @@ export const EcommerceRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/orders/details",
+      route: "/ecommerce",
 
       params: {
         orderId: "{{orderId}}",
@@ -259,7 +259,7 @@ export const EcommerceRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/refund/details",
+      route: "/ecommerce",
 
       params: {
         refundReference: "{{refundReference}}",
@@ -285,7 +285,7 @@ export const EcommerceRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/refund/details",
+      route: "/ecommerce",
 
       params: {
         refundReference: "{{refundReference}}",

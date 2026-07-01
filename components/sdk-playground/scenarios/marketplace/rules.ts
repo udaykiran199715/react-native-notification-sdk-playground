@@ -21,7 +21,7 @@ export const MarketplaceRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/marketplace",
+      route: "/marketplace",
 
       params: {
         productId: "{{productId}}",
@@ -48,7 +48,7 @@ export const MarketplaceRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/marketplace",
+      route: "/marketplace",
 
       params: {
         productId: "{{productId}}",
@@ -75,7 +75,7 @@ export const MarketplaceRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/marketplace",
+      route: "/marketplace",
 
       params: {
         coupon: "{{coupon}}",
@@ -102,7 +102,7 @@ export const MarketplaceRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/marketplace",
+      route: "/marketplace",
 
       params: {
         sellerId: "{{sellerId}}",
@@ -130,7 +130,7 @@ export const MarketplaceRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/marketplace",
+      route: "/marketplace",
 
       params: {
         productId: "{{productId}}",
@@ -157,7 +157,7 @@ export const MarketplaceRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/marketplace",
+      route: "/marketplace",
 
       params: {
         productId: "{{productId}}",
@@ -184,7 +184,7 @@ export const MarketplaceRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/marketplace",
+      route: "/marketplace",
 
       params: {
         productId: "{{productId}}",
@@ -211,7 +211,7 @@ export const MarketplaceRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/marketplace/cart",
+      route: "/marketplace",
     },
   },
 
@@ -234,7 +234,7 @@ export const MarketplaceRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/marketplace",
+      route: "/marketplace",
 
       params: {
         productId: "{{productId}}",
@@ -260,7 +260,7 @@ export const MarketplaceRules: NotificationRule[] = [
     },
 
     navigation: {
-      route: "/(tabs)/marketplace",
+      route: "/marketplace",
 
       params: {
         productId: "{{productId}}",
