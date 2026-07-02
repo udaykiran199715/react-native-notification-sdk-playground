@@ -3,7 +3,7 @@ export const DemoEmployeePayload = Object.freeze({
 
   employeeName: "Uday Kiran",
 
-  managerId: "EMP-0001",
+  managerId: "EMP-1002",
 
   managerName: "John Smith",
 
@@ -23,5 +23,6 @@ export const DemoEmployeePayload = Object.freeze({
 
   office: "Hyderabad",
 
-  image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600",
+  image:
+    "https://5.imimg.com/data5/SELLER/Default/2021/11/VM/HB/DS/33697925/hrms-computer-software-developers-500x500.jpg",
 });

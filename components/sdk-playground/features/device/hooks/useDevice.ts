@@ -34,7 +34,11 @@ export function useDevice() {
 
       setPermission(permissionStatus.permission);
       setToken(fcmToken);
-      setCurrentUser(user ?? undefined);
+      setCurrentUser(
+        user
+          ? user
+          : { id: TestUsers[0]?.id, metadata: { name: TestUsers[0]?.name } },
+      );
     } catch (error) {
       console.error("Failed to refresh device information.", error);
     }

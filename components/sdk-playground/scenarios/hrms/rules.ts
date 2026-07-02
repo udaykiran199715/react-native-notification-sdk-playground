@@ -10,7 +10,7 @@ export const HrmsRules: NotificationRule[] = [
 
     audience: {
       type: AudienceType.USERS,
-      sources: ["managerId"],
+      sources: ["managerId", "employeeId"],
     },
 
     notification: {

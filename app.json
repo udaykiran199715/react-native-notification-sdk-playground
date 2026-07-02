@@ -43,9 +43,25 @@
           }
         }
       ],
-      "@react-native-firebase/app",
+      [
+        "@react-native-firebase/app",
+        {
+          "forceStaticLinking": ["RNFBApp", "RNFBFirestore", "RNFBMessaging"]
+        }
+      ],
       "@react-native-firebase/messaging",
-      "react-native-notification-sdk/plugins"
+      "react-native-notification-sdk/plugins",
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static",
+            "buildReactNativeFromSource": true,
+            "deploymentTarget": "15.1"
+          }
+        }
+      ],
+      "./plugins/withRNFBPodfileFix"
     ],
     "experiments": {
       "typedRoutes": true,
